@@ -1,9 +1,9 @@
 <template>
-  <el-container style="height: 100vh">
+  <el-container>
     <el-header>
       <Header />
     </el-header>
-    <el-container class="container">
+    <el-container class="container" style="height: 100vh>
       <el-aside width="200px"><Navbar /></el-aside>
       <el-main>Main</el-main>
     </el-container>
@@ -34,12 +34,5 @@ export default {
 .el-container {
   display: flex; /* 使用 Flexbox 布局 */
   justify-content: flex-start; /* 向左对齐 */
-}
-body > .el-container {
-  margin-bottom: 40px;
-}
-.main-container {
-  display: flex; /* 使用 Flexbox 布局 */
-  height: 100%; /* 确保子容器的高度 */
 }
 </style>
