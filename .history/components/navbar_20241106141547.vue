@@ -53,7 +53,11 @@ export default {
 };
 </script>
 
-<style> 
+<style>
+.container {
+  display: flex; /* 使用 Flexbox 来布局 */
+}
+
 .tac {
   margin: 0; /* 确保没有外边距 */
 }

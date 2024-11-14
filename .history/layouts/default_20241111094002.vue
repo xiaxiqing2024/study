@@ -12,7 +12,7 @@
         <el-header>
           <Breadcrumb />
         </el-header>
-        <el-main class="container_test">
+        <el-main>
           <nuxt-child />
           <!-- 确保在这里渲染子路由 -->
         </el-main>
@@ -36,7 +36,8 @@ export default {
 </script>
 
 <style>
-.container_demo {
-  background: linear-gradient(to bottom, #466a90, #ffffff); /* 自定义背景颜色 */
+.container_demo{
+  background-color: #25405c; /* 自定义背景颜色 */
+  
 }
 </style>

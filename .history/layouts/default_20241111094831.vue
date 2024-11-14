@@ -39,4 +39,8 @@ export default {
 .container_demo {
   background: linear-gradient(to bottom, #466a90, #ffffff); /* 自定义背景颜色 */
 }
+.container_test {
+  background-color: #3b73ac; /* 自定义背景颜色 */
+  margin-left:50px;
+}
 </style>

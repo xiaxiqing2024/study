@@ -25,8 +25,6 @@
           :label="item.date"
           :value="item.date"
         ></el-option>
-
-
       </el-select>
       <i class="icon" @click="toggleSearchBox">🔍</i>
       <div v-if="showSearchBox" class="search-box">
@@ -61,10 +59,9 @@
 </template>
   
   <script>
-  import * as echarts from 'echarts'; // 确保已经安装并引入 ECharts
+import * as echarts from "echarts";
 
 export default {
-
   name: "Energy",
   data() {
     return {
@@ -94,13 +91,38 @@ export default {
         },
       ],
       filteredData: [],
+      chart_name: {
+        title: {
+          text: "姓名分布",
+          subtext: "基于表格数据",
+          left: "center",
+        },
+        tooltip: {
+          trigger: "item",
+        },
+        legend: {
+          orient: "vertical",
+          left: "left",
+        },
+        series: [
+          {
+            name: "姓名",
+            type: "pie",
+            radius: "50%",
+            data: [], // 初始化为空
+            emphasis: {
+              itemStyle: {
+                shadowBlur: 10,
+                shadowOffsetX: 0,
+                shadowColor: "rgba(0, 0, 0, 0.5)",
+              },
+            },
+          },
+        ],
+      },
     };
   },
   methods: {
-    renderChart(name,legends,datas){
-
-
-    },
     formatter(row, _column) {
       return row.address;
     },

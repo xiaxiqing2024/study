@@ -40,7 +40,6 @@ export default {
   plugins: [
     '@/plugins/element-ui',
     '@/plugins/echarts',
-    '@/plugins/vue-echarts.js',
     { src: "@/plugins/Swiper", ssr: false }
   ],
 

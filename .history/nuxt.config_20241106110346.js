@@ -25,22 +25,20 @@ export default {
   },
   vue: {
     config: {
-      productionTip: false,
-      devtools: true
+      devtools: true // 确保这里是 true
     }
-  },
+  }
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     'element-ui/lib/theme-chalk/index.css',
-    'swiper/css/swiper.css',
+    'swiper/css/swiper.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '@/plugins/element-ui',
     '@/plugins/echarts',
-    '@/plugins/vue-echarts.js',
     { src: "@/plugins/Swiper", ssr: false }
   ],
 

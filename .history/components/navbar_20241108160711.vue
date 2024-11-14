@@ -53,7 +53,7 @@ export default {
 };
 </script>
 
-<style> 
+<style>
 .tac {
   margin: 0; /* 确保没有外边距 */
 }

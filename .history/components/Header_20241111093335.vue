@@ -37,7 +37,7 @@
   
   <style scoped>
   .header {
-    background-color: #315c88; /* 自定义背景颜色 */
+    background-color: #3d74ac; /* 自定义背景颜色 */
     color: white; /* 字体颜色 */
     height: 60px; /* 设置头部高度 */
     line-height: 60px; /* 垂直居中 */

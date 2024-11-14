@@ -14,9 +14,9 @@
               <span>导航一</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="1-1" @click="setActive('1-1')">
-                <nuxt-link to="/energy">选项1</nuxt-link>
-              </el-menu-item>
+              <el-menu-item index="1-1" @click="setActive('1-1')"
+              nuxt-link to="/energy">选项1</el-menu-item
+              >
               <el-menu-item index="1-2" @click="setActive('1-2')"
                 >选项2</el-menu-item
               >
@@ -53,7 +53,11 @@ export default {
 };
 </script>
 
-<style> 
+<style>
+.container {
+  display: flex; /* 使用 Flexbox 来布局 */
+}
+
 .tac {
   margin: 0; /* 确保没有外边距 */
 }
