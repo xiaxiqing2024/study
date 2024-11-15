@@ -26,6 +26,7 @@ export default {
         },
         series: [
           {
+            name: "Marketing Channels",
             type: "pie",
             radius: ["33%", "50%"],
             center: ["50%", "55%"],
@@ -40,10 +41,10 @@ export default {
             labelLine: {
               length: 20,
             },
-            startAngle:230,
             data: [1],
           },
           {
+            name: "Marketing Channels",
             type: "pie",
             radius: ["33%", "50%"],
             center: ["50%", "55%"],
@@ -58,6 +59,7 @@ export default {
             ],
           },
           {
+            name: "Traffic Sources", // 添加名称以匹配图例
             type: "pie",
             radius: ["68%", "85%"],
             center: ["50%", "55%"],
@@ -65,29 +67,18 @@ export default {
             label: {
               show: true,
               fontSize: 14,
-              formatter() {
-                return "测试2";
-              },
               labelLine: {
                 length: 20,
               },
-              overflow:'break',
             },
-            startAngle:50,
-            data: [1],
-          },
-          {
-            type: "pie",
-            radius: ["68%", "85%"],
-            center: ["50%", "55%"],
-            label: { show: false },
             data: [
               {
                 value: 1048,
                 name: "Baidu",
+                labelLine: { show: false },
               },
               { value: 335, name: "Direct(Traffic Sources)" },
-              { value: 310, name: "Email" },
+              { value: 310, name: "Email", labelLine: { show: false } },
             ],
           },
         ],

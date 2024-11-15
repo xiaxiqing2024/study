@@ -40,7 +40,6 @@ export default {
             labelLine: {
               length: 20,
             },
-            startAngle:230,
             data: [1],
           },
           {
@@ -71,16 +70,15 @@ export default {
               labelLine: {
                 length: 20,
               },
-              overflow:'break',
             },
-            startAngle:50,
             data: [1],
           },
           {
             type: "pie",
             radius: ["68%", "85%"],
             center: ["50%", "55%"],
-            label: { show: false },
+            colorBy: "series",
+            label: {show: false,},
             data: [
               {
                 value: 1048,

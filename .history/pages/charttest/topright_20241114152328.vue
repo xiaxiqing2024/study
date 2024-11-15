@@ -40,7 +40,6 @@ export default {
             labelLine: {
               length: 20,
             },
-            startAngle:230,
             data: [1],
           },
           {
@@ -71,9 +70,8 @@ export default {
               labelLine: {
                 length: 20,
               },
-              overflow:'break',
+              position: "left",
             },
-            startAngle:50,
             data: [1],
           },
           {

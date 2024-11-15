@@ -72,6 +72,7 @@ export default {
                 length: 20,
               },
               overflow:'break',
+              position: "left",
             },
             startAngle:50,
             data: [1],
